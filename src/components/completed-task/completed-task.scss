@@ -1,0 +1,10 @@
+.completed-task {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  &__item {
+    text-decoration: line-through;
+  }
+}

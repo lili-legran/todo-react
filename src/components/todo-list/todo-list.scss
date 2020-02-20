@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Coming Soon', cursive;
+  background-color: #67C8C6;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  padding: 60px 0;
+  color: #DD4646;
+  font-size: 4em;
+}
+
+.todo {
+  &__container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border: 3px solid #337780;
+    margin: 0 auto;
+    padding: 30px;
+    background: #e1fffe;
+    position: relative;
+    &::after,
+    &::before {
+      content: "";
+      width: 105%;
+      height: 105%;
+      position: absolute;
+      top: -2.5%;
+      left: -2.5%;
+      z-index: -5;
+    } 
+    &::after {
+      border: 3px solid #DD4646;  
+      transform: rotate(2deg);
+    } 
+    &::before {
+      width: 102%;
+      height: 102%;
+      top: -1%;
+      left: -1%;
+      border: 3px solid #e6d131;  
+      transform: rotate(-2deg);
+    }
+  }
+}
