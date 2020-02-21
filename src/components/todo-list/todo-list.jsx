@@ -3,6 +3,8 @@ import './todo-list.scss';
 import CreationField from '../creation-field/creation-field';
 import ActiveTasks from '../active-tasks/active-tasks';
 import CompletedTasks from '../completed-tasks/completed-tasks';
+import FirstPin from '../assets/pin-1.';
+import SecondPin from '../assets/pin-2';
 
 class TodoList extends React.Component {
   state = {
@@ -50,6 +52,8 @@ class TodoList extends React.Component {
             completedTasks = {this.state.completedArray}
           />
         </div>
+        <FirstPin />
+        <SecondPin />
      </div>
     )
   }
