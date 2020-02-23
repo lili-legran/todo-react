@@ -51,9 +51,9 @@ class TodoList extends React.Component {
           <CompletedTasks 
             completedTasks = {this.state.completedArray}
           />
+          <FirstPin />
+          <SecondPin />
         </div>
-        <FirstPin />
-        <SecondPin />
      </div>
     )
   }
